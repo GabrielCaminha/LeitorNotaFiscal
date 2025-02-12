@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block title %}Upload de XML{% endblock %}
+
+{% block content %}
+    <h1>Envio de Arquivo XML</h1>
+    
+    <form action="{% url 'upload_xml' %}" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <label for="xml_files">Escolha um ou mais arquivos XML:</label>
+        <input type="file" name="xml_files" id="xml_files" accept=".xml" multiple>
+        <button type="submit">Enviar Arquivos</button>
+    </form>
+
+    <br>
+
+    <form action="{% url 'upload_xml' %}" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <label for="zip_file">Ou envie uma pasta compactada (ZIP):</label>
+        <input type="file" name="zip_file" id="zip_file" accept=".zip">
+        <button type="submit">Enviar Pasta (ZIP)</button>
+    </form>
+
+    {% if file_url %}
+        <h2>Arquivo Processado</h2>
+        <a href="{{ file_url }}" download>Baixar Relatório Gerado</a>
+    {% endif %}
+
+    <br>
+    <form action="{% url 'logout' %}" method="post">
+        {% csrf_token %}
+        <button type="submit">Sair</button>
+    </form>
+{% endblock %}

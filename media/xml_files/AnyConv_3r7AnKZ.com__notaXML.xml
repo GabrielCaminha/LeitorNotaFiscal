@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd">
+<article lang="">
+  <para>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&#13;</para>
+  <para>&lt;ConsultarNfseResposta xmlns="http://www.abrasf.org.br/nfse"&gt;&#13;</para>
+  <para>    &lt;ListaNfse&gt;&#13;</para>
+  <para>        &lt;CompNfse&gt;&#13;</para>
+  <para>            &lt;Nfse&gt;&#13;</para>
+  <para>                &lt;InfNfse&gt;&#13;</para>
+  <para>                    &lt;Numero&gt;123456&lt;/Numero&gt;&#13;</para>
+  <para>                    &lt;DataEmissao&gt;2025-01-28T14:30:00&lt;/DataEmissao&gt;&#13;</para>
+  <para>                    &lt;PrestadorServico&gt;&#13;</para>
+  <para>                        &lt;IdentificacaoPrestador&gt;&#13;</para>
+  <para>                            &lt;Cnpj&gt;12345678000195&lt;/Cnpj&gt;&#13;</para>
+  <para>                            &lt;InscricaoMunicipal&gt;123456&lt;/InscricaoMunicipal&gt;&#13;</para>
+  <para>                        &lt;/IdentificacaoPrestador&gt;&#13;</para>
+  <para>                        &lt;RazaoSocial&gt;Empresa Teste LTDA&lt;/RazaoSocial&gt;&#13;</para>
+  <para>                    &lt;/PrestadorServico&gt;&#13;</para>
+  <para>                    &lt;TomadorServico&gt;&#13;</para>
+  <para>                        &lt;IdentificacaoTomador&gt;&#13;</para>
+  <para>                            &lt;CpfCnpj&gt;&#13;</para>
+  <para>                                &lt;Cnpj&gt;98765432000185&lt;/Cnpj&gt;&#13;</para>
+  <para>                            &lt;/CpfCnpj&gt;&#13;</para>
+  <para>                        &lt;/IdentificacaoTomador&gt;&#13;</para>
+  <para>                        &lt;RazaoSocial&gt;Cliente Exemplo&lt;/RazaoSocial&gt;&#13;</para>
+  <para>                    &lt;/TomadorServico&gt;&#13;</para>
+  <para>                    &lt;Servico&gt;&#13;</para>
+  <para>                        &lt;CodigoTributacaoMunicipio&gt;1234567&lt;/CodigoTributacaoMunicipio&gt;&#13;</para>
+  <para>                        &lt;Discriminacao&gt;Desenvolvimento de software personalizado&lt;/Discriminacao&gt;&#13;</para>
+  <para>                        &lt;Valores&gt;&#13;</para>
+  <para>                            &lt;ValorServicos&gt;1500.00&lt;/ValorServicos&gt;&#13;</para>
+  <para>                            &lt;IssRetido&gt;1&lt;/IssRetido&gt;&#13;</para>
+  <para>                        &lt;/Valores&gt;&#13;</para>
+  <para>                    &lt;/Servico&gt;&#13;</para>
+  <para>                &lt;/InfNfse&gt;&#13;</para>
+  <para>            &lt;/Nfse&gt;&#13;</para>
+  <para>        &lt;/CompNfse&gt;&#13;</para>
+  <para>    &lt;/ListaNfse&gt;&#13;</para>
+  <para>&lt;/ConsultarNfseResposta&gt;&#13;</para>
+</article>
