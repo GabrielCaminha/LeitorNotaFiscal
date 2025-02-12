@@ -4,11 +4,11 @@ import dj_database_url  # Import necessário para pegar a URL do banco no ambien
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = os.getenv('SECRET_KEY', 'django-insecure-236%=g@mn4@mab6x(bvc*2t=5+&(=*vey6lx^jwltx%^t2xw-i')
+SECRET_KEY = os.getenv('SECRET_KEY')
 
-DEBUG = os.getenv('DEBUG', 'True') == 'True'
+DEBUG = False
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', '147.93.13.69', 'seu-dominio.com']
+ALLOWED_HOSTS = ['*']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
